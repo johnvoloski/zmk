@@ -21,7 +21,9 @@ RGB behaviors are global, so a key press on either half changes both sides.
 
 ## Hardware notes
 
-Pin map, OLED header order, LED chain order and soldering troubleshooting are in [docs/hardware.md](docs/hardware.md).
+Assembly from scratch, step by step with photos: [docs/build-guide.md](docs/build-guide.md).
+
+Pin map, OLED header order, LED chain order and soldering troubleshooting: [docs/hardware.md](docs/hardware.md).
 
 ## Display
 
