@@ -1,6 +1,6 @@
 # Corne v3 wireless ZMK config
 
-ZMK firmware config for a Corne v3 (6 column) with nice!nano v2, nice!view displays, per-key RGB and underglow.
+ZMK firmware config for a Corne v3 (6 column) with nice!nano v2 (or a compatible ProMicro NRF52840 clone), 0.91" I2C OLED displays, per-key RGB and underglow.
 Based on [typeractivexyz/corne-wireless-view-zmk-config](https://github.com/typeractivexyz/corne-wireless-view-zmk-config).
 
 ## Keymap
@@ -18,6 +18,16 @@ ZMK drives the 21 per-key LEDs and the 6 underglow LEDs of each half as a single
 - The Lower layer exposes RGB controls on the bottom row: toggle, next effect, hue, saturation, brightness up and brightness down.
 
 RGB behaviors are global, so a key press on either half changes both sides.
+
+## Display
+
+Each half uses the standard Corne 0.91" 128x32 I2C OLED (SSD1306) plugged into the `OLED` header. `CONFIG_ZMK_DISPLAY=y` turns it on. The OLED talks I2C on pins `017` and `020`, so it does not interfere with the LED data line on `006`.
+
+Solder the 4-pin header to the display, then solder the display into the PCB header with `GND` on the display aligned to `GND` on the PCB silkscreen.
+
+## Controller
+
+A nice!nano v2 or a compatible clone such as the ProMicro NRF52840 (Supermini), mounted components down. The `nice_nano_v2` board target works for both.
 
 ## Building
 
