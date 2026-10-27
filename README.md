@@ -19,6 +19,10 @@ ZMK drives the 21 per-key LEDs and the 6 underglow LEDs of each half as a single
 
 RGB behaviors are global, so a key press on either half changes both sides.
 
+## Hardware notes
+
+Pin map, OLED header order, LED chain order and soldering troubleshooting are in [docs/hardware.md](docs/hardware.md).
+
 ## Display
 
 Each half uses the standard Corne 0.91" 128x32 I2C OLED (SSD1306) plugged into the `OLED` header. `CONFIG_ZMK_DISPLAY=y` turns it on. The OLED talks I2C on pins `017` and `020`, so it does not interfere with the LED data line on `006`.
