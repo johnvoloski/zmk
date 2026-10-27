@@ -1,0 +1,42 @@
+draw_config:
+  key_w: 60.0
+  key_h: 56.0
+  split_gap: 30.0
+  append_colon_to_layer_header: true
+  shrink_wide_legends: 7
+parse_config:
+  zmk_keycode_map:
+    SEMI: ";"
+    SQT: "'"
+    COMMA: ","
+    DOT: "."
+    FSLH: "/"
+    BSLH: "\\"
+    GRAVE: "`"
+    TILDE: "~"
+    MINUS: "-"
+    EQUAL: "="
+    UNDER: "_"
+    PLUS: "+"
+    LBKT: "["
+    RBKT: "]"
+    LBRC: "{"
+    RBRC: "}"
+    PIPE: "|"
+    EXCL: "!"
+    AT: "@"
+    HASH: "#"
+    DLLR: "$"
+    PRCNT: "%"
+    CARET: "^"
+    AMPS: "&"
+    KP_MULTIPLY: "*"
+    LPAR: "("
+    RPAR: ")"
+    BSPC: Bksp
+    SPACE: Space
+    RET: Enter
+    LSHFT: Shift
+    LCTRL: Ctrl
+    LGUI: Gui
+    RALT: Alt
